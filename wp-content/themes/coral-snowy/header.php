@@ -20,28 +20,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
   <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'coral-snowy' ); ?></a>
-  <div id="gcontainer" class="grid-container">
-	
-	<div id="navi" class="grid-parent grid-100 tablet-grid-100 mobile-grid-100">
-		<nav id="site-navigation" class="main-navigation egrid" role="navigation">
-			<i id="menu-button" class="fa fa-bars collapsed"><span><?php _e( '  Menu', 'coral-snowy' ); ?></span></i>
-			<?php 
-			if (!is_rtl()) {
-				if ( has_nav_menu( 'primary' ) ) {
-					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-menu', 'menu_class' => 'sm sm-clean collapsed' ) );
-				} else {
-					wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb'  => 'coral_snowy_wp_page_menu_mine' ) ); 
-				}
-			} else {
-				if ( has_nav_menu( 'primary' ) ) {
-					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-menu', 'menu_class' => 'sm sm-rtl sm-clean collapsed' ) );
-				} else {
-					wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb'  => 'coral_snowy_wp_page_menu_mine' ) );
-				}	
-			}
-			?>
-		</nav><!-- #site-navigation -->
-	</div><!-- #navi -->	
+  <div id="gcontainer-header">
 	<header id="masthead" class="site-header grid-parent grid-100 tablet-grid-100 mobile-grid-100" role="banner">
 		<div class="site-branding egrid  grid-80 tablet-grid-80 mobile-grid-100" style="padding-left: 10px;">
 			<!--logo-->
@@ -89,10 +68,34 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
+	
+	<div id="navi" class="grid-parent grid-100 tablet-grid-100 mobile-grid-100">
+		<nav id="site-navigation" class="main-navigation egrid" role="navigation">
+			<i id="menu-button" class="fa fa-bars collapsed"><span><?php _e( '  Menu', 'coral-snowy' ); ?></span></i>
+			<?php 
+			if (!is_rtl()) {
+				if ( has_nav_menu( 'primary' ) ) {
+					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-menu', 'menu_class' => 'sm sm-clean collapsed' ) );
+				} else {
+					wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb'  => 'coral_snowy_wp_page_menu_mine' ) ); 
+				}
+			} else {
+				if ( has_nav_menu( 'primary' ) ) {
+					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'main-menu', 'menu_class' => 'sm sm-rtl sm-clean collapsed' ) );
+				} else {
+					wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb'  => 'coral_snowy_wp_page_menu_mine' ) );
+				}	
+			}
+			?>
+		</nav><!-- #site-navigation -->
+	</div><!-- #navi -->	
 
 
 	<?php do_action( 'coral_snowy_slider' ); ?>	
-<!-- breadcrumbs from Yoast or NavXT plugins -->
+  </div>
+  
+  <div id="gcontainer" class="grid-container">
+	<!-- breadcrumbs from Yoast or NavXT plugins -->
 	<?php if ( function_exists( 'yoast_breadcrumb' ) ) : ?>
 	<div id="breadcrumbs" class="grid-parent grid-100 tablet-grid-100 mobile-grid-100">
 		<div class="breadcrumbs grid-100 tablet-grid-100 mobile-grid-100">
