@@ -4657,7 +4657,7 @@ Supports Thumbs: true
     border-radius: 0px;
   }
   .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
-    padding: 9px 14px 8px 14px;
+    padding: 15px 14px 14px 14px;
     background: #444;
     color: #eee;
 	font-size: 12px;
@@ -4703,7 +4703,7 @@ Supports Thumbs: true
     border-top: 0;
   }
   .sm-clean > li {
-	border-right: 1px solid #999999;
+	/*border-right: 1px solid #999999;*/
   }
   .sm-clean > li > ul:before,
   .sm-clean > li > ul:after {
@@ -4726,7 +4726,7 @@ Supports Thumbs: true
   }
   .sm-clean ul {
     border: 1px solid #555;
-    padding: 5px 0;
+    padding: 10px 0;
     background: #000;
     -webkit-border-radius: 5px !important;
     -moz-border-radius: 5px !important;

@@ -28,6 +28,8 @@
 }
 #masthead{
 	background: #fff !important;
+	padding-top: 20px; 
+	padding-bottom: 20px;
 }
 #navi.sticky-nav {
     position: fixed;
@@ -140,6 +142,53 @@ div.file_userdata_fieldwrapper,
 div.file_userdata_fieldwrapper_required, 
 div.file_userdata_fieldwrapper_required_empty{
     width: 100% !important;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex.space {
+	justify-content: space-around; 
+}
+
+.flex.center {
+	justify-content: center; 
+}
+
+.flex.wrap {
+	flex-wrap: wrap;
+}
+
+.flex.align-center {
+	align-items: center; 
+}
+
+.vber-title1 {
+	color: #FD5F00;
+	font-size: 150%;
+	font-weight: bold;
+}
+.vber-title2 {
+	color: #FD5F00;
+	font-size: 120%;
+	font-weight: bold; 
+}
+.vber-title3 {
+	color: #00305E;
+	font-size: 95%;
+	font-weight: bold;
+}
+.vber-title4 {
+	text-align: center; 
+	padding-top: 30px; 
+	color: #FD5F00;
+	font-size: 180%;
+	font-weight: bold;
+}
+
+.nivo-caption {
+	display: none !important;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

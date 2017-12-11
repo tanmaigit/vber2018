@@ -21,11 +21,10 @@
 <div id="page" class="hfeed site">
   <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'coral-snowy' ); ?></a>
   <div id="gcontainer-header">
-  
-  <header id="masthead" style="padding-top: 20px;padding-bottom: 20px; display: flex; justify-content: space-around; flex-wrap:wrap" role="banner">
-		<div class="" style="">
-			<div style="display: flex;justify-content: center;">
-				<!--logo-->
+	<header id="masthead" class="flex space wrap" role="banner">
+		<div style="padding-bottom: 20px;">
+			<div class="flex center">
+				<!--OU logo-->
 				<div style="border-right: 2px solid; padding-right: 5px !important;">
 					<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
 					<img style="height:80px; width:140px" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/OU-1.png">
@@ -43,7 +42,7 @@
 			</div>
 		</div><!-- .site-branding -->
 		
-		<div class="">
+		<div>
 			<div style="display: flex;justify-content: center;">
 				<!--logo-->
 				<div>
@@ -52,66 +51,18 @@
 					</a>
 				</div>
 				<div style="padding-left: 20px;">
-					<div style="color: #FD5F00;font-size: 150%;font-weight: bold;">VIETNAM'S</div>
-					<div style="color: #FD5F00;font-size: 120%;font-weight: bold; line-height: 15px;">BUSINESS AND ECONOMICS</div>
-					<div style="color: #FD5F00;font-size: 120%;font-weight: bold;">RESEARCH CONFERENCE</div>
-					<div style="color: #00305E;font-size: 95%;font-weight: bold;">Renaissance Riverside Hotel saigon</div>
-					<div style="color: #00305E;font-size: 95%;font-weight: bold;">10th August 2018</div>
+					<div class="vber-title1">VIETNAM'S</div>
+					<div class="vber-title2" style="line-height: 15px;">BUSINESS AND ECONOMICS</div>
+					<div class="vber-title2">RESEARCH CONFERENCE</div>
+					<div class="vber-title3">Renaissance Riverside Hotel saigon</div>
+					<div class="vber-title3">10th August 2018</div>
 				</div>
 			</div>
-			
 		</div><!-- .site-branding -->
 		
-		
-		<div class="grid-parent egrid grid-100 tablet-grid-100 mobile-grid-100" 
-			style="text-align: center; padding-top: 50px; color: #FD5F00;font-size: 180%;font-weight: bold;flex-grow:3">
+		<div class="vber-title4">
 			Renaissance Riverside Hotel saigon Renaissance Riverside Hotel saigon<br>Hotel Riverside Hotel saigon
 		</div><!-- .site-branding -->
-		
-		
-	</header><!-- #masthead -->
-	
-	<header id="masthead222" class="site-header grid-parent grid-100 tablet-grid-100 mobile-grid-100" style="padding-top: 20px;padding-bottom: 20px;padding-left: 70px;" role="banner">
-		<div class="site-branding egrid grid-30 tablet-grid-30 mobile-grid-100" style="position: relative">
-			<!--logo-->
-			<div class="logo" style="border-right: 2px solid; width: 40%; padding-right: 5px !important;">
-				<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
-				<img style="height:80px; width:140px" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/OU-1.png">
-				</a>
-				<div class="logo-text">
-					<div>HO CHI MINH CITY</div>
-					<div>OPEN UNIVERSITY</div>
-				</div>
-			</div>
-			<div class="logo" style="padding-left: 5px;">
-				<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
-					<img style="max-height: 50px; position: absolute; bottom: 0;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/BERG-1.png">
-				</a>
-			</div>
-		</div><!-- .site-branding -->
-		
-		<div class="grid-parent egrid grid-65 tablet-grid-65 mobile-grid-100" style="padding-left: 30px; position: relative">
-			<!--logo-->
-			<div class="logo" style="width: 60%">
-				<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
-				<img style="height: 104px;width: 750px;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/VBER-1.png">
-				</a>
-			</div>
-			<div class="logo" style="padding-left: 20px">
-				<div style="color: #FD5F00;font-size: 150%;font-weight: bold;">VIETNAM'S</div>
-				<div style="color: #FD5F00;font-size: 120%;font-weight: bold; line-height: 15px;">BUSINESS AND ECONOMICS</div>
-				<div style="color: #FD5F00;font-size: 120%;font-weight: bold;">RESEARCH CONFERENCE</div>
-				<div style="color: #00305E;font-size: 95%;font-weight: bold;">Renaissance Riverside Hotel saigon</div>
-				<div style="color: #00305E;font-size: 95%;font-weight: bold;">10th August 2018</div>
-			</div>
-		</div><!-- .site-branding -->
-		
-		<div class="grid-parent egrid grid-100 tablet-grid-100 mobile-grid-100" 
-			style="text-align: center; padding-top: 50px; color: #FD5F00;font-size: 180%;font-weight: bold;">
-			Renaissance Riverside Hotel saigon Renaissance Riverside Hotel saigon<br>Hotel Riverside Hotel saigon
-		</div><!-- .site-branding -->
-		
-		
 	</header><!-- #masthead -->
 	
 	<div id="navi" class="grid-parent grid-100 tablet-grid-100 mobile-grid-100">
@@ -135,8 +86,22 @@
 		</nav><!-- #site-navigation -->
 	</div><!-- #navi -->	
 
-
-	<?php do_action( 'coral_snowy_slider' ); ?>	
+	<?php do_action( 'coral_snowy_slider' ); ?>
+	
+	<div style="padding-top: 15px; padding-bottom: 8px; background-color: #5bc6cc; border-bottom: 5px solid #e3066f">
+		<div class="grid-container flex align-center">
+			<div class="" style="padding-right: 20px;">
+				<div style="color: #fff;font-size: 160%;font-weight: bold; line-height: 24px">Join the Conference</div>
+				<div style="color: #fff;text-align: right">Conference starts in</div>
+			</div>
+			<div class="" style="padding-right: 50px;">
+			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/10/31 04:07" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
+			</div>
+			<div class="" style="color: #fff; border-left: 1px solid #FD5F00">
+				Bookmark Website
+			</div>
+		</div>
+	</div>
   </div>
   
   <div id="gcontainer" class="grid-container">
