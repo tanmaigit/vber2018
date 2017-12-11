@@ -9,7 +9,9 @@
 	$( document ).ready( function() {
 		// Sticky Header
 		$(window).scroll(function() {
-		  if ($(this).scrollTop() > 300){
+		  var headerHeight = $('header#masthead').innerHeight();
+		  //console.log('headerHeight: ' + headerHeight);
+		  if ($(this).scrollTop() > headerHeight){
 			$('#navi').addClass("sticky-nav");
 		  }
 		  else{

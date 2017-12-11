@@ -27,12 +27,13 @@
     opacity: 1;
 }
 #masthead{
-	background: #ff6a09 !important;
+	background: #fff !important;
 }
 #navi.sticky-nav {
     position: fixed;
     z-index: 1000;
-	max-width: 1020px;
+	/*max-width: 1020px;*/
+	top: 0;
 }
 #mvcwid, #mvccount, #mvctable, #mvctable table td{
 	padding-left: 0 !important;
@@ -57,6 +58,14 @@ div.logo{
 	/*margin-left: -30px !important;*/
     padding-right: 0 !important;
 	float: left;
+}
+.logo-text{
+	color: #000;
+    font-weight: 750;
+    font-size: 82%;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -1px;
 }
 .ou-logo{
 	padding-top: 16px !important;
@@ -133,4 +142,11 @@ div.file_userdata_fieldwrapper_required_empty{
     width: 100% !important;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+}
 
