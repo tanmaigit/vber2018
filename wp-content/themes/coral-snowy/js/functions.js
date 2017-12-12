@@ -10,9 +10,14 @@
 		// Sticky Header
 		$(window).scroll(function() {
 		  var headerHeight = $('header#masthead').innerHeight();
+		  
+		  var wpadminbarHeight = 0;
+		  if($('#wpadminbar').length > 0)
+			wpadminbarHeight = $('#wpadminbar').innerHeight();
 		  //console.log('headerHeight: ' + headerHeight);
 		  if ($(this).scrollTop() > headerHeight){
 			$('#navi').addClass("sticky-nav");
+			$('#navi.sticky-nav').css('top', wpadminbarHeight);
 		  }
 		  else{
 			$('#navi').removeClass("sticky-nav");
