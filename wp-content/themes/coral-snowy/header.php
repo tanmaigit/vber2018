@@ -88,7 +88,8 @@
 
 	<?php do_action( 'coral_snowy_slider' ); ?>
 	
-	<div style="padding-top: 15px; padding-bottom: 8px; background-color: #5bc6cc; border-bottom: 5px solid #e3066f">
+	<?php if (is_front_page()) { ?>
+	<div style="padding-top: 15px; padding-bottom: 8px; background-color: #5bc6cc; border-bottom: 5px solid #FD5F00">
 		<div class="grid-container flex center align-center">
 			<div class="" style="padding-right: 20px;">
 				<div style="color: #fff;font-size: 160%;font-weight: bold; line-height: 24px">Join the Conference</div>
@@ -99,6 +100,7 @@
 			</div>
 		</div>
 	</div>
+	<?php } ?>
   </div>
   
   <div id="gcontainer" class="grid-container">

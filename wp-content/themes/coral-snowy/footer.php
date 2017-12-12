@@ -8,12 +8,11 @@
  */
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer grid-parent grid-100 tablet-grid-100 mobile-grid-100" role="contentinfo">
+	</div><!-- #content -->	
+  </div><!-- #gcontainer -->
+  <footer id="colophon" class="site-footer grid-parent grid-100 tablet-grid-100 mobile-grid-100" role="contentinfo">
 		<span id="designer" class="aligncenter" style="text-align:center">&copy2017 Ho Chi Minh City Open University</span>
 	</footer><!-- #colophon -->
-  </div><!-- #gcontainer -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -311,10 +311,10 @@ function coral_snowy_column_class($column) {
 		if (34 == $contentwidth || 67 == $contentwidth) $contentwidth = $contentwidth -1;
 		switch ($column) {
 			case "content":
-				$class=" grid-". $contentwidth ." tablet-grid-". $contentwidth ." mobile-grid-100 push-". $sidebarwidth ." tablet-push-". $sidebarwidth;
+				$class=" grid-". $contentwidth ." tablet-grid-". $contentwidth ." mobile-grid-100";
 				break;
 			case "sidebar1":
-				$class=" grid-". $sidebarwidth ." tablet-grid-". $sidebarwidth ." mobile-grid-100 pull-". $contentwidth ." tablet-pull-". $contentwidth;
+				$class=" grid-". $sidebarwidth ." tablet-grid-". $sidebarwidth ." mobile-grid-100";
 				break;
 		}	
 		echo esc_attr($class);

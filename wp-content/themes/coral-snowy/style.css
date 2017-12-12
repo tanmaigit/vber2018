@@ -579,13 +579,13 @@ html {
 }
 
 body {
-	background: #fafafa; /* Fallback for when there is no custom background color defined. */
+	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
 #gcontainer {
-	-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2); 
+	/*-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);*/
+	/*-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);*/
+	/*box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2); */
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
@@ -616,8 +616,8 @@ body {
 	background: #fff;
 }
 #colophon {
-	background: #000;
-	color: #aaa;
+	background: #00305E;
+	color: #fff;
 	padding-top: 10px;
 }
 #colophon h4 {
@@ -1058,7 +1058,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	margin-bottom: 0px;
 }
 #main-menu.collapsed {
-    display: block;
+    display: flex;
+    justify-content: space-around;
 }
 /* Small menu. */
 #menu-button {
@@ -4657,10 +4658,12 @@ Supports Thumbs: true
     border-radius: 0px;
   }
   .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
-    padding: 15px 14px 14px 14px;
-    background: #444;
+    padding: 16px 14px 13px 14px;
+    
     color: #eee;
 	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
@@ -4668,10 +4671,13 @@ Supports Thumbs: true
     border-radius: 0 !important;
   }
   .sm-clean a {
-	background: #000000;
+	background: #00305E;
+  }
+  .sm-clean a:hover {
+	border-bottom: 3px solid #fd5f00;
   }
   .sm-clean a.current {
-    background: #444;
+    border-bottom: 3px solid #fd5f00;
 	color: #eee;
   }
   .sm-clean a.disabled {
@@ -4704,6 +4710,8 @@ Supports Thumbs: true
   }
   .sm-clean > li {
 	/*border-right: 1px solid #999999;*/
+	flex: 1 0 auto;
+	background: #00305E;
   }
   .sm-clean > li > ul:before,
   .sm-clean > li > ul:after {
@@ -4727,7 +4735,7 @@ Supports Thumbs: true
   .sm-clean ul {
     border: 1px solid #555;
     padding: 10px 0;
-    background: #000;
+    background: #00305E;
     -webkit-border-radius: 5px !important;
     -moz-border-radius: 5px !important;
     -ms-border-radius: 5px !important;
@@ -4744,8 +4752,7 @@ Supports Thumbs: true
     color: #aaa;
   }
   .sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active, .sm-clean ul a.highlighted {
-    background: #000;
-    color: #eee;
+    color: #FD5F00;
   }
   .sm-clean ul a.current {
     color: #eee;
