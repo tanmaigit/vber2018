@@ -45,6 +45,13 @@
 			}
 			return false;
 		});
+		$('.speaker-menu-ul li a').click(function(e){
+			var $cId = $(this).attr('id');
+			$('#speaker-content').html($('#' + $cId + '-content').html());
+			$('.speaker-menu-a').removeClass('active');
+			$(this).addClass('active');
+		});
+		$('#speaker1').trigger('click');
 	});
 	$( window ).load( function() {
 		$('#slider').nivoSlider({

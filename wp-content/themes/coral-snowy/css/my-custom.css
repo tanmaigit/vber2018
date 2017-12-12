@@ -191,6 +191,77 @@ div.file_userdata_fieldwrapper_required_empty{
 	display: none !important;
 }
 
+.speaker-menu-div .speaker-menu-ul {
+    border-right: 1px solid #ededed;
+}
+
+.speaker-menu-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ededed;
+    margin-bottom: 20px;
+}
+
+.speaker-menu-ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.speaker-menu-ul li a {
+    border-right: 1px solid #ededed !important;
+	text-decoration: none;
+}
+
+.speaker-menu-ul li a {
+    border-bottom: 1px solid #ededed;
+    display: block;
+    height: auto;
+    font-weight: normal;
+    font: 14px/39px 'MuseoSlab500Regular', arial, helvetica, sans-serif;
+    color: #333333;
+}
+
+.speaker-menu-ul li a.active {
+	font-weight: bold;
+	color: #FD5F00;
+}
+
+.speaker-menu-ul li a:hover {
+	font-weight: bold;
+	color: #FD5F00;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 15px;
+}
+
+#wrapper .post-content h2, #wrapper .title h2 {
+    line-height: 27px;
+    background: none;
+    padding-bottom: 10px;
+}
+
+#main .fusion-portfolio h2, #wrapper #main .post h2, #wrapper #main .post-content .fusion-title h2, #wrapper #main .post-content .title h2, #wrapper .fusion-title h2, .post-content h2, .title h2, h2.entry-title {
+    font-size: 24px;
+    line-height: 41px;
+}
+
+.post-content p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.fusion-post-content h3, .fusion-title h3, .person-author-wrapper span, .post-content h3, .product-title, .project-content h3, .title h3 {
+    color: #e50670;
+}
+.post-content h3, .project-content h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 	
 }

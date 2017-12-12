@@ -4658,8 +4658,7 @@ Supports Thumbs: true
     border-radius: 0px;
   }
   .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
-    padding: 16px 14px 13px 14px;
-    
+    padding: 16px 14px 12px 14px;
     color: #eee;
 	font-size: 12px;
 	font-weight: bold;
@@ -4672,6 +4671,7 @@ Supports Thumbs: true
   }
   .sm-clean a {
 	background: #00305E;
+	border-bottom: 3px solid #00305E;
   }
   .sm-clean a:hover {
 	border-bottom: 3px solid #fd5f00;
