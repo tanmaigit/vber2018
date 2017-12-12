@@ -89,16 +89,13 @@
 	<?php do_action( 'coral_snowy_slider' ); ?>
 	
 	<div style="padding-top: 15px; padding-bottom: 8px; background-color: #5bc6cc; border-bottom: 5px solid #e3066f">
-		<div class="grid-container flex align-center">
+		<div class="grid-container flex center align-center">
 			<div class="" style="padding-right: 20px;">
 				<div style="color: #fff;font-size: 160%;font-weight: bold; line-height: 24px">Join the Conference</div>
 				<div style="color: #fff;text-align: right">Conference starts in</div>
 			</div>
 			<div class="" style="padding-right: 50px;">
-			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/10/31 04:07" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
-			</div>
-			<div class="" style="color: #fff; border-left: 1px solid #FD5F00">
-				Bookmark Website
+			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/08/16 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
 			</div>
 		</div>
 	</div>
