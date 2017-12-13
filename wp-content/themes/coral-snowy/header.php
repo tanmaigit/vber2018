@@ -25,7 +25,7 @@
 		<div style="padding-bottom: 20px;">
 			<div class="flex center">
 				<!--OU logo-->
-				<div style="border-right: 2px solid; padding-right: 5px !important;">
+				<div style="border-right: 2px solid #00305E; padding-right: 5px !important;">
 					<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
 					<img style="height:80px; width:140px" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/OU-1.png">
 					</a>
@@ -55,13 +55,13 @@
 					<div class="vber-title2" style="line-height: 15px;">BUSINESS AND ECONOMICS</div>
 					<div class="vber-title2">RESEARCH CONFERENCE</div>
 					<div class="vber-title3">Renaissance Riverside Hotel saigon</div>
-					<div class="vber-title3">10th August 2018</div>
+					<div class="vber-title3">10<sup>th</sup> August 2018</div>
 				</div>
 			</div>
 		</div><!-- .site-branding -->
 		
 		<div class="vber-title4">
-			Renaissance Riverside Hotel saigon Renaissance Riverside Hotel saigon<br>Hotel Riverside Hotel saigon
+			<?php echo str_replace('\n', '<br>', get_theme_mod('top_text', '')); ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 	
@@ -96,7 +96,7 @@
 				<div style="color: #fff;text-align: right">Conference starts in</div>
 			</div>
 			<div class="" style="padding-right: 50px;">
-			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/08/16 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
+			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/06/8 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
 			</div>
 		</div>
 	</div>

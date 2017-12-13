@@ -183,7 +183,7 @@ div.file_userdata_fieldwrapper_required_empty{
 	text-align: center; 
 	padding-top: 30px; 
 	color: #FD5F00;
-	font-size: 180%;
+	font-size: 170%;
 	font-weight: bold;
 }
 
@@ -230,36 +230,11 @@ div.file_userdata_fieldwrapper_required_empty{
 .speaker-menu-ul li a:hover {
 	font-weight: bold;
 	color: #FD5F00;
+	cursor: pointer;
 }
 
-.alignright {
-    display: inline;
-    float: right;
-    margin-left: 15px;
-}
-
-#wrapper .post-content h2, #wrapper .title h2 {
-    line-height: 27px;
-    background: none;
-    padding-bottom: 10px;
-}
-
-#main .fusion-portfolio h2, #wrapper #main .post h2, #wrapper #main .post-content .fusion-title h2, #wrapper #main .post-content .title h2, #wrapper .fusion-title h2, .post-content h2, .title h2, h2.entry-title {
-    font-size: 24px;
-    line-height: 41px;
-}
-
-.post-content p {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.fusion-post-content h3, .fusion-title h3, .person-author-wrapper span, .post-content h3, .product-title, .project-content h3, .title h3 {
-    color: #e50670;
-}
-.post-content h3, .project-content h3 {
-    font-size: 16px;
-    line-height: 24px;
+#myslideshow img {
+	/*max-height: 425px;*/
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

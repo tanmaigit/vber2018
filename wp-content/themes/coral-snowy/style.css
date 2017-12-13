@@ -4747,9 +4747,11 @@ Supports Thumbs: true
   }
   .sm-clean ul a, .sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active, .sm-clean ul a.highlighted {
     border: 0 !important;
-	font-size: 14px;
+	font-size: 12px;
     padding: 10px 20px;
     color: #aaa;
+	text-align: left;
+	text-transform: uppercase;
   }
   .sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active, .sm-clean ul a.highlighted {
     color: #FD5F00;

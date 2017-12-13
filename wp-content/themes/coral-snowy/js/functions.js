@@ -7,6 +7,13 @@
 
 ( function( $ ) {
 	$( document ).ready( function() {
+		
+		if($.trim($('#secondary').html()) == ''){
+			$('#secondary').hide();
+			$('#primary').removeClass('grid-70 tablet-grid-70');
+			$('#primary').addClass('grid-100 tablet-grid-100');
+		}
+		
 		// Sticky Header
 		$(window).scroll(function() {
 		  var headerHeight = $('header#masthead').innerHeight();
@@ -45,13 +52,40 @@
 			}
 			return false;
 		});
-		$('.speaker-menu-ul li a').click(function(e){
-			var $cId = $(this).attr('id');
+		// Speaker
+		$('.speaker-item-clickable').live('click', function(e){
+			var $cId = $(this).data('id');
 			$('#speaker-content').html($('#' + $cId + '-content').html());
 			$('.speaker-menu-a').removeClass('active');
-			$(this).addClass('active');
+			$('#' + $cId).addClass('active');
 		});
-		$('#speaker1').trigger('click');
+		$('#all-speakers').trigger('click');
+		
+		// Staff
+		$('.staff-clickable').live('click', function(e){
+			var $cId = $(this).data('id');
+			var $sectionId = $(this).data('section');
+			var $sectionObj = $('#staff-content' + $sectionId);
+			var $sectionStaffId = $sectionObj.data('staff-id');
+			var $isShowing = $sectionObj.is(':visible');
+			
+			// Hide all section first
+			$('.staff-section-content').slideUp();
+			
+			// Fill content first
+			$sectionObj.html($('#' + $cId + '-content').html());
+			
+			// Click twice on same staff
+			if($cId == $sectionStaffId) {
+				if(!$isShowing){
+					$sectionObj.show("slow");
+				}
+			} else {
+				$sectionObj.show("slow");
+			}
+			
+			$('#staff-content' + $sectionId).data('staff-id', $cId);
+		});
 	});
 	$( window ).load( function() {
 		$('#slider').nivoSlider({
