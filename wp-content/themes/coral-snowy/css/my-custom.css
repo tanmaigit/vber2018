@@ -63,7 +63,7 @@ div.logo{
 }
 .logo-text{
 	color: #000;
-    font-weight: 750;
+    font-weight: bold;
     font-size: 82%;
     line-height: 14px;
     text-align: center;
@@ -166,12 +166,12 @@ div.file_userdata_fieldwrapper_required_empty{
 
 .vber-title1 {
 	color: #FD5F00;
-	font-size: 150%;
+	font-size: 165%;
 	font-weight: bold;
 }
 .vber-title2 {
 	color: #FD5F00;
-	font-size: 120%;
+	font-size: 135%;
 	font-weight: bold; 
 }
 .vber-title3 {

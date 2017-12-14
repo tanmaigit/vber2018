@@ -47,13 +47,13 @@
 				<!--logo-->
 				<div>
 					<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
-					<img style="height: 104px;width: 500px;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/VBER-1.png">
+					<img style="height: 104px;width: 360px;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/VBER-1.png">
 					</a>
 				</div>
-				<div style="padding-left: 20px;">
+				<div style="padding-left: 20px;line-height: 20px;">
 					<div class="vber-title1">VIETNAM'S</div>
-					<div class="vber-title2" style="line-height: 15px;">BUSINESS AND ECONOMICS</div>
-					<div class="vber-title2">RESEARCH CONFERENCE</div>
+					<div class="vber-title2" style="padding-top: 6px">BUSINESS AND ECONOMICS</div>
+					<div class="vber-title2" style="padding-top: 2px">RESEARCH CONFERENCE</div>
 					<div class="vber-title3">Renaissance Riverside Hotel saigon</div>
 					<div class="vber-title3">10<sup>th</sup> August 2018</div>
 				</div>
