@@ -73,18 +73,27 @@
 			$('.staff-section-content').slideUp();
 			
 			// Fill content first
-			$sectionObj.html($('#' + $cId + '-content').html());
+			$sectionObj.find('.content-detail').html($('#' + $cId + '-content').html());
 			
 			// Click twice on same staff
 			if($cId == $sectionStaffId) {
 				if(!$isShowing){
-					$sectionObj.show("slow");
+					$sectionObj.show("slow", function() {
+						$('.staff-section-content').jScrollPane({showArrows: true});
+					});
 				}
 			} else {
-				$sectionObj.show("slow");
+				$sectionObj.show("slow", function() {
+					$('.staff-section-content').jScrollPane({showArrows: true});
+				});
 			}
 			
 			$('#staff-content' + $sectionId).data('staff-id', $cId);
+		});
+		// Close
+		$('.staff-close-button').live('click', function(e){
+			// Hide all section first
+			$(this).closest('.staff-section-content').slideUp();
 		});
 	});
 	$( window ).load( function() {

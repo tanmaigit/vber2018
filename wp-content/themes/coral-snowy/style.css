@@ -1417,9 +1417,9 @@ html > body #secondary .widget_nav_menu li ul li a {
 /* Widget titles in the left and right sidebars */
 #secondary h4.widget-title {
     text-transform: uppercase;
-	border-bottom: 1px solid #444;
+	/*border-bottom: 1px solid #444;*/
 	font-size: 1.07em;
-	padding-bottom: 4px;
+	/*padding-bottom: 4px;*/
 	word-wrap: break-word;
 }
 #secondary .widget_nav_menu h4.widget-title {

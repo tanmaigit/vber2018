@@ -55,12 +55,12 @@
 					<div class="vber-title2" style="padding-top: 6px">BUSINESS AND ECONOMICS</div>
 					<div class="vber-title2" style="padding-top: 2px">RESEARCH CONFERENCE</div>
 					<div class="vber-title3">Renaissance Riverside Hotel saigon</div>
-					<div class="vber-title3">10<sup>th</sup> August 2018</div>
+					<div class="vber-title3">6<sup>th</sup> August 2018</div>
 				</div>
 			</div>
 		</div><!-- .site-branding -->
 		
-		<div class="vber-title4">
+		<div class="vber-title4" style="width:100%">
 			<?php echo str_replace('\n', '<br>', get_theme_mod('top_text', '')); ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
@@ -96,7 +96,7 @@
 				<div style="color: #fff;text-align: right">Conference starts in</div>
 			</div>
 			<div class="" style="padding-right: 50px;">
-			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/06/8 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
+			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/8/6 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
 			</div>
 		</div>
 	</div>
