@@ -111,9 +111,12 @@ a.logged-title{
 	margin-left: 50px !important;
 }
 span#designer{
-    font-size: 12px;
-    margin: 2px 0 15px 0;
+	background: #00305e;
+    font-size: 13px;
+    /* margin: 2px 0 15px 0; */
     color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .um-84.um input.um-button[type="submit"], .um-83.um input.um-button[type="submit"], .um-um_password_id.um input.um-button[type="submit"]{
@@ -144,12 +147,107 @@ div.file_userdata_fieldwrapper_required_empty{
     width: 100% !important;
 }
 
+article.post .entry-meta,
+article.post footer.entry-footer {
+    display: none;
+}
+#calendar_wrap #wp-calendar thead tr th {
+    text-align: center !important;
+}
+#wp-calendar {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    border-collapse: separate;
+    border-spacing: 3px;
+    margin-left: -3px;
+    margin-bottom: 0 !important;
+}
+#wp-calendar caption {
+    display: none;
+}
+#wp-calendar tbody td {
+    /*margin-bottom:10px;*/
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #f4f4f4;
+    padding: 3px;
+}
+#wp-calendar tbody td:hover {
+    border-color: #e2e2e2;
+}
+#wp-calendar tbody td.pad {
+    border: 0;
+}
+#wp-calendar tbody td#today {
+    color: #fff;
+    border-color: #F79633;
+    background: #FD5F00;
+}
+#wp-calendar tfoot td#prev a,
+#wp-calendar tfoot td#next a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    bottom: -9px;
+    margin-bottom: 1px;
+}
+#wp-calendar tfoot td#prev {
+    text-align: left;
+}
+#wp-calendar tfoot td#next {
+    text-align: right;
+}
+#wp-calendar thead th {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#wp-calendar tfoot td#prev a:hover,
+#wp-calendar tfoot td#next a:hover {
+    color: #F79633;
+}
+
+#secondary {
+	background-color: #f5f5f5;
+    padding-top: 20px;
+}
+
+h4.widget-title, .border1 {
+    background: url('../images/backg.png')no-repeat bottom left;
+    padding-bottom: 6px;
+}
+footer h4.widget-title, .border2 {
+    background: url('../images/backg2.png')no-repeat bottom left !important;
+}
+.border2 {
+	height: 3px;
+}
+
+aside#text-2 .textwidget{
+	background: #fff;
+    padding: 6px 10px;
+}
+
 .flex {
 	display: flex;
 }
 
 .flex.space {
 	justify-content: space-around; 
+}
+
+.flex.space-b {
+	justify-content: space-between; 
 }
 
 .flex.center {
@@ -247,12 +345,14 @@ div.file_userdata_fieldwrapper_required_empty{
     height: 400px;
     overflow: auto;
 	display: none;
+	margin-bottom: 20px;
 }
 
 .staff-section-content .content-detail{
 	padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
+	padding-bottom: 20px;
 }
 
 .staff-close-button {
@@ -279,7 +379,7 @@ div.file_userdata_fieldwrapper_required_empty{
     background-image: url('../images/arrow-down.png');
 }
 .staff-section-content .jspVerticalBar .jspArrow:hover {
-    background-color: #009943;
+    background-color: #ef8d53;
 }
 .staff-section-content .jspVerticalBar .jspArrow {
     height: 20px;
@@ -289,36 +389,69 @@ div.file_userdata_fieldwrapper_required_empty{
 	cursor: pointer;
 }
 .staff-section-content .jspVerticalBar .jspDrag {
-    background-color: #009943;
+    background-color: #ef8d53;
 }
 .staff-section-content .jspVerticalBar .jspTrack {
-    background-color: #404040;
+    background-color: #000;
 }
 
+.img-staff {
+	height: 150px;
+    width: 100%;
+}
+.staff-hiring {
+	padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 15px;
+    color: #fff;
+    background: #23415f;
+    font-size: 120%;
+    font-weight: bold;
+}
 .staff-desc {
 	position: relative;
+	line-height: 22px;
+}
+.staff-name {
+	font-weight: bold;
+}
+.staff-name2 {
+	color: #FD5F00;
+	font-weight: bold;
+	font-size: 140%;
+	padding-bottom: 5px;
+}
+.staff-title2 {
+	font-weight: bold;
+	font-size: 110%;
 }
 
 .staff-clickable {
+	background: url('../images/info.png');
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	width: 25px;
+    height: 24px;
+    cursor: pointer;
 }
 
-#secondary {
-	background-color: #f5f5f5;
-    padding-top: 20px;
+.staff-clickable:hover, .staff-clickable.current {
+    background-position: 0 -25px;
 }
 
-h4.widget-title {
-    background: url('../images/backg.png')no-repeat bottom left;
-    padding-bottom: 6px;
+.footer-text {
+	text-align: left;
+	padding-bottom: 5px;
 }
 
-aside#text-2 .textwidget{
-	background: #fff;
-    padding: 6px 10px;
+#calendar-2{
+	padding-left: 10px !important;
 }
+#text-4{
+	padding-right: 30px !important;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	

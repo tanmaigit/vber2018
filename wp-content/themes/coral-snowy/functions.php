@@ -124,6 +124,16 @@ function coral_snowy_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Footer Blocks', 'coral-snowy' ),
+		'id'            => 'footer-blocks',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s grid-33 tablet-grid-33 mobile-grid-100" style="padding-left: 0">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'coral_snowy_widgets_init' );
 

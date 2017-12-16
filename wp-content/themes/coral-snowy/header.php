@@ -54,8 +54,9 @@
 					<div class="vber-title1">VIETNAM'S</div>
 					<div class="vber-title2" style="padding-top: 6px">BUSINESS AND ECONOMICS</div>
 					<div class="vber-title2" style="padding-top: 2px">RESEARCH CONFERENCE</div>
-					<div class="vber-title3">Renaissance Riverside Hotel saigon</div>
-					<div class="vber-title3">6<sup>th</sup> August 2018</div>
+					<div class="vber-title3">Renaissance Riverside Hotel Saigon</div>
+					<div class="vber-title3">8-15 Ton Duc Thang Street, District 1,  Ho Chi Minh City  Vietnam</div>
+					<div class="vber-title3">23<sup>rd</sup>-24<sup>th</sup> July 2018</div>
 				</div>
 			</div>
 		</div><!-- .site-branding -->
@@ -96,7 +97,7 @@
 				<div style="color: #fff;text-align: right">Conference starts in</div>
 			</div>
 			<div class="" style="padding-right: 50px;">
-			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/8/6 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
+			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/7/23 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
 			</div>
 		</div>
 	</div>

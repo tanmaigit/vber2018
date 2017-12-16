@@ -63,6 +63,7 @@
 		
 		// Staff
 		$('.staff-clickable').live('click', function(e){
+			var that = this;
 			var $cId = $(this).data('id');
 			var $sectionId = $(this).data('section');
 			var $sectionObj = $('#staff-content' + $sectionId);
@@ -71,6 +72,7 @@
 			
 			// Hide all section first
 			$('.staff-section-content').slideUp();
+			$('.staff-clickable').removeClass('current');
 			
 			// Fill content first
 			$sectionObj.find('.content-detail').html($('#' + $cId + '-content').html());
@@ -78,11 +80,15 @@
 			// Click twice on same staff
 			if($cId == $sectionStaffId) {
 				if(!$isShowing){
+					$(that).addClass('current');
+					//$('.staff-section-content').css('width', '100%');
 					$sectionObj.show("slow", function() {
 						$('.staff-section-content').jScrollPane({showArrows: true});
 					});
 				}
 			} else {
+				$(that).addClass('current');
+				//$('.staff-section-content').css('width', '100%');
 				$sectionObj.show("slow", function() {
 					$('.staff-section-content').jScrollPane({showArrows: true});
 				});
