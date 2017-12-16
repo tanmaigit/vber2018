@@ -55,7 +55,6 @@
 					<div class="vber-title2" style="padding-top: 6px">BUSINESS AND ECONOMICS</div>
 					<div class="vber-title2" style="padding-top: 2px">RESEARCH CONFERENCE</div>
 					<div class="vber-title3">Renaissance Riverside Hotel Saigon</div>
-					<div class="vber-title3">8-15 Ton Duc Thang Street, District 1,  Ho Chi Minh City  Vietnam</div>
 					<div class="vber-title3">23<sup>rd</sup>-24<sup>th</sup> July 2018</div>
 				</div>
 			</div>
