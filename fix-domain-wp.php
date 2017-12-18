@@ -5,7 +5,9 @@ $dbName = $_GET['db'];
 
 $fileContent = file_get_contents(dirname(__FILE__) . '/' . $dbName . '.sql');
 
-//http://localhost/vber2018/fix-domain-wp.php?source=localhost/vber&dest=localhost/vber2018&db=vber
+//http://localhost/vber/fix-domain-wp.php?source=localhost/vber&dest=vber.ou.edu.vn/vber2018-private-only&db=vber
+//http://localhost/vber/fix-domain-wp.php?source=localhost/vber&dest=banxehoi.top&db=vber
+//update wp_posts set post_content = REPLACE(post_content, 'localhost/vber', 'banxehoi.top');
 $pattern = '/(s:)(\d+):\\\"http:\/\/' .(str_replace('/', '\\/', $source)). '/';
 //$pattern = '/(s:)(\d+):\\\"http:\/\/localhost\/vber/';
 
@@ -31,8 +33,8 @@ $newFileContent1 = str_replace($serializedList, $replacementList, $newFileConten
 //---------------
 $newFileContent2 = str_replace($searchList, $replacementList, $fileContent, $count3);
 
-file_put_contents(dirname(__FILE__) . '/' . $dbName . '-replaced-all.sql', $newFileContent1);
-file_put_contents(dirname(__FILE__) . '/' . $dbName . '-replaced.sql', $newFileContent2);
+file_put_contents(dirname(__FILE__) . '/' . $dbName . '-replaced-all['.str_replace('/', '-', $dest).'].sql', $newFileContent1);
+file_put_contents(dirname(__FILE__) . '/' . $dbName . '-replaced['.str_replace('/', '-', $dest).'].sql', $newFileContent2);
 
 echo 'Replace successfully!<br>';
 echo 'replaced-all.sql: ' .($count1+$count2). ' replacements<br>';

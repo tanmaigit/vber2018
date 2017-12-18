@@ -129,7 +129,7 @@ function coral_snowy_widgets_init() {
 		'name'          => __( 'Footer Blocks', 'coral-snowy' ),
 		'id'            => 'footer-blocks',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s grid-33 tablet-grid-33 mobile-grid-100" style="padding-left: 0">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s grid-50 tablet-grid-50 mobile-grid-100" style="padding-left: 0">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',

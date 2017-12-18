@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<div style="padding-left: 5px; align-self: flex-end">
-					<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
+					<a href="<?php echo get_site_url();?>">
 						<img style="max-height: 50px;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/BERG-1.png">
 					</a>
 				</div>
@@ -46,15 +46,16 @@
 			<div style="display: flex;justify-content: center;">
 				<!--logo-->
 				<div>
-					<a href="http://www.ou.edu.vn" target="_blank" rel="ou.edu.vn">
+					<a href="<?php echo get_site_url();?>">
 					<img style="height: 104px;width: 360px;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/VBER-1.png">
 					</a>
 				</div>
-				<div style="padding-left: 20px;line-height: 20px;">
+				<div style="padding-left: 20px;line-height: 16px;">
 					<div class="vber-title1">VIETNAM'S</div>
 					<div class="vber-title2" style="padding-top: 6px">BUSINESS AND ECONOMICS</div>
-					<div class="vber-title2" style="padding-top: 2px">RESEARCH CONFERENCE</div>
+					<div class="vber-title2" style="padding-top: 2px; padding-bottom: 2px;">RESEARCH CONFERENCE</div>
 					<div class="vber-title3">Renaissance Riverside Hotel Saigon</div>
+					<div class="vber-title3">8-15 Ton Duc Thang Street, District 1  Ho Chi Minh City  Vietnam </div>
 					<div class="vber-title3">23<sup>rd</sup>-24<sup>th</sup> July 2018</div>
 				</div>
 			</div>
@@ -96,7 +97,7 @@
 				<div style="color: #fff;text-align: right">Conference starts in</div>
 			</div>
 			<div class="" style="padding-right: 50px;">
-			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/7/23 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
+			<?php echo do_shortcode('[ujicountdown id="event" expire="2018/07/23 08:00" hide="true" url="" subscr="" recurring="" rectype="second" repeats=""]'); ?>
 			</div>
 		</div>
 	</div>

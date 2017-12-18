@@ -25,7 +25,7 @@
 				?>
 			</div>
 		</div>
-		<span id="designer" class="aligncenter" style="text-align:center">&copy2017 Ho Chi Minh City Open University</span>
+		<span id="designer" class="aligncenter" style="text-align:center">&copy2018 Ho Chi Minh City Open University</span>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

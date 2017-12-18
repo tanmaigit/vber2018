@@ -233,7 +233,7 @@ footer h4.widget-title, .border2 {
 	height: 3px;
 }
 
-aside#text-2 .textwidget{
+aside#text-2 .textwidget, aside#text-3 .textwidget{
 	background: #fff;
     padding: 6px 10px;
 }
@@ -259,22 +259,22 @@ aside#text-2 .textwidget{
 }
 
 .flex.align-center {
-	align-items: center; 
+	align-items: center;
 }
 
 .vber-title1 {
 	color: #FD5F00;
-	font-size: 165%;
+	font-size: 150%;
 	font-weight: bold;
 }
 .vber-title2 {
 	color: #FD5F00;
-	font-size: 135%;
-	font-weight: bold; 
+	font-size: 115%;
+	font-weight: bold;
 }
 .vber-title3 {
 	color: #00305E;
-	font-size: 95%;
+	font-size: 85%;
 	font-weight: bold;
 }
 .vber-title4 {
