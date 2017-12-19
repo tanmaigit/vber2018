@@ -452,7 +452,34 @@ aside#text-2 .textwidget, aside#text-3 .textwidget{
 	padding-right: 30px !important;
 }
 
+ul.dashed {
+  list-style-type: none;
+  margin-left: 22px;
+}
+ul.dashed li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+.staff-desc .staff-name {
+	font-weight: bold;
+	color: #00305e;
+}
+.staff-desc .staff-title {
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 10px;
+    color: #fd5f00;
+    padding-top: 2px;
+}
 
+.staff-desc .staff-title3 {
+    font-size: 85%;
+    font-weight: bold;
+    line-height: 18px;
+    color: #fd5f00;
+    padding-top: 2px;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 	
 }
