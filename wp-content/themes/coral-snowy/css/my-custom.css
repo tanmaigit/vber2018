@@ -427,17 +427,19 @@ aside#text-2 .textwidget, aside#text-3 .textwidget{
 }
 
 .staff-clickable {
-	background: url('../images/info.png');
+	background: url('../images/arrow-up2.png');
 	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 25px;
-    height: 24px;
+    right: 0;
+    bottom: 15px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
+	background-size: cover;
 }
 
-.staff-clickable:hover, .staff-clickable.current {
-    background-position: 0 -25px;
+.staff-clickable.current {
+    background: url('../images/arrow-down2.png');
+	background-size: cover;
 }
 
 .footer-text {
@@ -463,14 +465,18 @@ ul.dashed li:before {
 }
 .staff-desc .staff-name {
 	font-weight: bold;
-	color: #00305e;
+    color: #00305e;
+    text-align: center;
+    padding-right: 15px;
 }
 .staff-desc .staff-title {
-    font-size: 75%;
+    font-size: 80%;
     font-weight: bold;
     line-height: 10px;
     color: #fd5f00;
     padding-top: 2px;
+    text-align: center;
+    padding-right: 15px;
 }
 
 .staff-desc .staff-title3 {
@@ -480,8 +486,14 @@ ul.dashed li:before {
     color: #fd5f00;
     padding-top: 2px;
 }
+
+footer h4.widget-title {
+	white-space: nowrap;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
-	
+	.sm-clean a span.sub-arrow {
+		right: 12px;
+	}
 }
 
 @media (max-width: 767px) {

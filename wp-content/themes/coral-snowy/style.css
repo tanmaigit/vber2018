@@ -4687,9 +4687,9 @@ Supports Thumbs: true
     padding-right: 24px;
   }
   .sm-clean a span.sub-arrow {
-    top: 50%;
+    top: 55%;
     margin-top: -2px;
-    right: 12px;
+    right: 26px;
     width: 0;
     height: 0;
     border-width: 4px;
