@@ -52,10 +52,9 @@
 				</div>
 				<div style="padding-left: 20px;line-height: 16px;">
 					<div class="vber-title1">VIETNAM'S</div>
-					<div class="vber-title2" style="padding-top: 6px">BUSINESS AND ECONOMICS</div>
-					<div class="vber-title2" style="padding-top: 2px; padding-bottom: 2px;">RESEARCH CONFERENCE</div>
+					<div class="vber-title2" style="padding-top: 6px">BUSINESS & ECONOMICS RESEARCH CONFERENCE</div>
 					<div class="vber-title3">Renaissance Riverside Hotel Saigon</div>
-					<div class="vber-title3">8-15 Ton Duc Thang Street, Ben Nge Ward, District 1, Ho Chi Minh City, Vietnam</div>
+					<div class="vber-title3">8-15 Ton Duc Thang Street, Ben Nge Ward,<br> District 1, Ho Chi Minh City, Vietnam</div>
 					<div class="vber-title3">22<sup>nd</sup>-24<sup>th</sup> July 2018</div>
 				</div>
 			</div>
