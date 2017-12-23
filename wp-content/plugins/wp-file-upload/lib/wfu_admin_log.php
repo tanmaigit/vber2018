@@ -86,7 +86,7 @@ function wfu_datatables_get_data(
 	
 	$is_admin_user = in_array("administrator", $current_user->roles) || in_array("author", $current_user->roles);
 	if(empty($pagination)){
-		$pagination = ['limit' => 25, 'offset' => 0];
+		$pagination = ['limit' => 10, 'offset' => 0];
 	}
 	if(!$is_admin_user){
 		$filters['log.userid'] = $current_user->ID;
@@ -148,7 +148,7 @@ function wfu_datatables_get_data(
 		$from .= " JOIN ".$table_name2." userdata on userdata.uploadid=log.uploadid";
 	}
 	
-	$files_total = $wpdb->get_var('SELECT COUNT(*) FROM (SELECT COUNT(log.uploadid) '.$from.$conditions.$group.$limit.$offset.') AS all_count');
+	$files_total = $wpdb->get_var('SELECT COUNT(*) FROM (SELECT COUNT(log.uploadid) '.$from.$conditions.$group.') AS all_count');
 	$filerecs = $wpdb->get_results($select.$from.$conditions.$group.$order_by.$limit.$offset);
 	
 	/*echo '<pre>';
@@ -199,6 +199,9 @@ function wfu_datatables_get_data(
 		// Remarks
 		if(!empty($userdatarecs_keys[$filerec->uploadid])){
 			foreach ( $userdatarecs_keys[$filerec->uploadid] as $userdata ) {
+				if(strlen($userdata->propvalue) > 160)
+					$userdata->propvalue = substr($userdata->propvalue, 0, 160) . '...';
+				
 				$_data[$userdata->property] = $userdata->propvalue;
 				if($get_header && !$got_meta)
 					$meta_data[] = ['data' => $userdata->property, 'name' => $userdata->property, 'sortable' => false, 'width' => $col_widths[count($meta_data)].'%'];

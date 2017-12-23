@@ -22,7 +22,7 @@ function registerDataTables($tableId, $columnMeta, $tableData, $totalRecord){
 	submittedList = jQuery('#' + $tableId).DataTable( {
 		"data": $tableData,
 		"deferLoading": $totalRecord,
-		"iDisplayLength": 25,
+		"iDisplayLength": 10,
         "processing": true,
         "serverSide": true,
 		"bSortCellsTop": true,

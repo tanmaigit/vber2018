@@ -130,7 +130,7 @@ function wfu_ajax_action_callback_on_list() {
 	$dataTableResults = [
 		'draw' => $params['draw'], 
 		'recordsTotal' => $data['files_total'],
-		'recordsFiltered' => count($data['data']), 
+		'recordsFiltered' => $data['files_total'], 
 		'data' => $data['data']
 	];
 	

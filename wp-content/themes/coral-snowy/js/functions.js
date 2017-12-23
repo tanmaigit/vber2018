@@ -104,7 +104,7 @@
 	});
 	$( window ).load( function() {
 		$('#slider').nivoSlider({
-			effect: nivoSliderParams.effect,
+			effect: 'random',
 			animSpeed: nivoSliderParams.animspeed,
 			pauseTime: nivoSliderParams.pausetime,
 			controlNav: true,

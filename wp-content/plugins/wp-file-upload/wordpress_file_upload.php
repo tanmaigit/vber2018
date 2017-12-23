@@ -178,9 +178,7 @@ function wordpress_file_upload_function($incomingfromhandler) {
 		$tableId = 'submitted_papers_list';
 		$data = wfu_datatables_get_data([],[],[],true,$tableId);
 	
-		$style = '<style>
-			#secondary{display:none}
-		</style>';
+		$style = '';
 		
 		$script = '
 		<script type="text/javascript">

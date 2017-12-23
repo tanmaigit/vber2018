@@ -277,6 +277,10 @@ aside#text-2 .textwidget, aside#text-3 .textwidget{
 	font-size: 90%;
 	font-weight: bold;
 }
+.vber-title3 a {
+	color: #00305E;
+	text-decoration: none;
+}
 .vber-title4 {
 	text-align: center; 
 	padding-top: 30px; 
