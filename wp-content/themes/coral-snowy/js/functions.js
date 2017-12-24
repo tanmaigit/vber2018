@@ -59,7 +59,17 @@
 			$('.speaker-menu-a').removeClass('active');
 			$('#' + $cId).addClass('active');
 		});
-		$('#all-speakers').trigger('click');
+		if(window.location.hash) {
+			var hash = window.location.hash.substring(1);
+			if(hash == 'Ken-Clements')
+				$('#speaker1').trigger('click');
+			else if(hash == 'Cheng-Few-Lee')
+				$('#speaker2').trigger('click');
+			else
+				$('#all-speakers').trigger('click');
+		} else {
+			$('#all-speakers').trigger('click');
+		}
 		
 		// Staff
 		$('.staff-clickable').live('click', function(e){
