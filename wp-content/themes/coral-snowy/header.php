@@ -15,6 +15,16 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111642378-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111642378-1');
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -35,7 +45,7 @@
 					</div>
 				</div>
 				<div style="padding-left: 5px; align-self: flex-end">
-					<a href="<?php echo get_site_url();?>">
+					<a href="<?php echo get_site_url();?>/about">
 						<img style="max-height: 50px;" src="<?php echo get_site_url();?>/wp-content/uploads/2017/12/BERG-1.png">
 					</a>
 				</div>

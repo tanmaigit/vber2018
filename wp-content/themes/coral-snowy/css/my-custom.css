@@ -400,7 +400,7 @@ aside#text-2 .textwidget, aside#text-3 .textwidget{
 }
 
 .img-staff {
-	height: 200px;
+	height: 250px;
     width: 100%;
 }
 .staff-hiring {
@@ -483,11 +483,11 @@ ul.dashed li:before {
 }
 
 .staff-desc .staff-title3 {
-    font-size: 85%;
+    font-size: 95%;
     font-weight: bold;
     line-height: 18px;
     color: #fd5f00;
-    line-height: 15px;
+    line-height: 16px;
 }
 
 footer h4.widget-title {
