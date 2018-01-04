@@ -1,3 +1,30 @@
+# BEGIN WP Hide & Security Enhancer
+<IfModule mod_rewrite.c> 
+RewriteEngine On 
+RewriteBase /vber/ 
+#WriteCheckString:1514864688_91253
+RewriteRule .* - [E=HTTP_MOD_REWRITE:On]
+
+RewriteRule ^vber2018_template/vber2018-style.css /vber/wp-content/themes/coral-snowy/style.css [L,QSA]
+
+RewriteRule ^vber2018_template/(.+) /vber/wp-content/themes/coral-snowy/$1 [L,QSA]
+
+RewriteRule ^files/(.+) /vber/wp-content/uploads/$1 [L,QSA]
+
+RewriteRule ^vber2018/(.+) /vber/wp-content/$1 [L,QSA]
+
+RewriteCond %{REQUEST_URI} /vber/vber-admin$
+RewriteRule ^(.*)$ /vber/vber-admin/ [R=301,L]
+RewriteRule ^vber-admin(.*) /vber/wp-admin$1 [L,QSA]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^wp-admin(.+) /vber/index.php?wph-throw-404 [L]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^dashboard(.+) /vber/index.php?wph-throw-404 [L]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^admin(.+) /vber/index.php?wph-throw-404 [L]
+</IfModule> 
+
+# END WP Hide & Security Enhancer
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

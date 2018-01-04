@@ -290,7 +290,7 @@ aside#text-2 .textwidget, aside#text-3 .textwidget{
 }
 
 .nivo-caption {
-	display: none !important;
+	/*display: none !important;*/
 }
 
 .speaker-menu-div .speaker-menu-ul {
@@ -498,7 +498,11 @@ footer h4.widget-title {
 		right: 12px;
 	}
 }
-
+@media (min-width: 1024px) and (max-width: 1295px) {
+	.sm-clean a span.sub-arrow {
+		right: 15px;
+	}
+}
 @media (max-width: 767px) {
 	
 }
