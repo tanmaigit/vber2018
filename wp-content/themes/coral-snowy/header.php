@@ -13,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<meta property="og:image" content="http://vber.ou.edu.vn/files/2017/12/VBER-1.png" />
 
 <?php wp_head(); ?>
 
