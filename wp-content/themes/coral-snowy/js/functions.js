@@ -65,6 +65,8 @@
 				$('#speaker1').trigger('click');
 			else if(hash == 'Cheng-Few-Lee')
 				$('#speaker2').trigger('click');
+			else if(hash == 'Donghyun-Park')
+				$('#speaker3').trigger('click');
 			else
 				$('#all-speakers').trigger('click');
 		} else {
